@@ -1,0 +1,70 @@
+section.banner {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.767) 20%, rgba(0, 0, 0, 0)), url("../assets/imgs/back-banner.png");
+    height: 101vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: -90px;
+
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+
+    padding: 0 4rem;
+
+    & > img {
+        width: 250px;
+    }
+
+    & h1 {
+        font-size: 3rem;
+        color: rgb(255, 246, 246);
+    }
+
+    & p {
+        color: rgb(240, 248, 224);
+
+        & > strong {
+            color: var(--cor-destaque);
+        }
+    }
+
+    & .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        gap: 10px;
+        padding-top: 3rem;
+
+        & a {
+            background-color: rgba(7, 75, 7, 0.329);
+            padding: .8rem 1.5rem;
+            border-radius: 10px;
+            border: solid 2px green;
+            transition: .5s;
+
+            &:hover {
+            background-color: rgba(7, 75, 7, 0.76);
+            border: solid 2px rgba(7, 75, 7, 0.76);
+
+
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width: 800px) {
+    section.banner {
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
