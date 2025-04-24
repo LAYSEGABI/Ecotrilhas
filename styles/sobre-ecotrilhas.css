@@ -1,0 +1,101 @@
+section.sobre-ecotrilhas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--text-destaque);
+    padding: 4rem;
+
+    flex-direction: column;
+    color: rgb(233, 255, 234);
+
+    & .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+
+        max-width: 1200px;
+        margin-inline: auto;
+
+        &>img {
+            width: 50%;
+        }
+
+        & .descricao {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+
+            & > div {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                & h3 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & p {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 950px) {
+    section.sobre-ecotrilhas {
+        & .container {
+
+            gap: 2rem;
+
+            & .descricao {
+
+                & > div {
+                    margin-bottom: 1rem;
+
+                    & > img {
+                        width: 40px;
+                    }
+
+                    & h3 {
+
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    section.sobre-ecotrilhas {
+
+        padding: 2rem;
+
+        & .container {
+            text-align: center;
+            flex-direction: column-reverse;
+
+            & img {
+                width: 100%;
+            }
+
+            & .descricao {
+
+                &>div {
+
+                    justify-content: center;
+
+                }
+            }
+        }
+    }
+}
