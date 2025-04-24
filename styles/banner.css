@@ -68,3 +68,19 @@ section.banner {
         text-align: center;
     }
 }
+
+@media (max-width: 330px) {
+    section.banner {
+
+        & > img {
+            width: 150px;
+        }
+        & h1 {
+            font-size: 2rem;
+        }
+
+        & .buttons {
+            padding-top: 1rem;
+        }
+    }
+}
