@@ -48,6 +48,11 @@ section.forms {
 
         & .descricao {
             width: 100%;
+            align-items: center;
+
+            & p {
+                text-align: center;
+            }
         }
 
         & iframe {
