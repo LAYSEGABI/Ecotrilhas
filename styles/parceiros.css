@@ -5,6 +5,7 @@ section.parceiros {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    padding: 4rem 0;
 
 
     & header {
