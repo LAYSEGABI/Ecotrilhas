@@ -1,0 +1,42 @@
+section.forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6rem;
+    gap: 2rem;
+
+    & .descricao {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 40%;
+        gap: 1rem;
+
+        & header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            &>img {
+                width: 40px;
+            }
+        }
+
+        & p {
+            width: 90%;
+        }
+
+        & > img {
+            width: 100%;
+        }
+    }
+
+
+
+    & iframe {
+        width: 40%;
+
+    }
+}
