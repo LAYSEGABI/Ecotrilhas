@@ -29,12 +29,14 @@ section.trilhas {
 
     & .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /* duas colunas */
-        grid-template-rows: 1fr 1fr; /* 3 linhas */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* duas colunas */
+        grid-template-rows: 1fr 1fr;
+        /* 3 linhas */
         grid-template-areas:
-          "Rev mocambique peri"
-          "Rev pocao matadeiro"
-       ;
+            "Rev mocambique peri"
+            "Rev pocao matadeiro"
+        ;
         gap: 1rem;
 
 
@@ -77,19 +79,72 @@ section.trilhas {
         & .peri {
             grid-area: peri;
             background-image: url('../assets/imgs/peri.png');
+            height: 200px;
+
 
         }
 
         & .pocao {
             grid-area: pocao;
             background-image: url('../assets/imgs/pocaoo.png');
+            height: 200px;
+
 
         }
-        
+
         & .matadeiro {
             grid-area: matadeiro;
             background-image: url('../assets/imgs/matadeiro.png');
+            height: 200px;
 
+
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    section.trilhas {
+        & .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            /* 3 linhas */
+            grid-template-areas:
+                "Rev mocambique "
+                "Rev pocao "
+                "peri matadeiro"
+            ;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    section.trilhas {
+        padding: 4rem 1rem;
+        & .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* duas colunas */
+            grid-template-rows: 5fr;
+            /* 3 linhas */
+            grid-template-areas:
+                "Rev "
+                "mocambique"
+                " pocao "
+                "peri "
+                "matadeiro"
+            ;
+            gap: 1rem;
+
+            & .card {
+                width: 100%;
+            }
+
+            & .baldinhos {
+                height: 200px;
+            }
         }
     }
 }

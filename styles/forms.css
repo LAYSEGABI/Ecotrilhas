@@ -28,7 +28,7 @@ section.forms {
             width: 90%;
         }
 
-        & > img {
+        &>img {
             width: 100%;
         }
     }
@@ -38,5 +38,20 @@ section.forms {
     & iframe {
         width: 40%;
 
+    }
+}
+
+@media (max-width: 1000px) {
+    section.forms {
+        flex-direction: column;
+        padding: 4rem 1rem;
+
+        & .descricao {
+            width: 100%;
+        }
+
+        & iframe {
+            width: 100%;
+        }
     }
 }
