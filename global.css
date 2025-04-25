@@ -66,6 +66,8 @@ a {
 [data-anima] {
     opacity: 0;
     transition: .8s;
+    will-change: transform;
+    overflow-x: hidden; 
 }
 
 [data-anima="esquerda"] {
