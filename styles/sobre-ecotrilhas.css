@@ -4,7 +4,7 @@ section.sobre-ecotrilhas {
     justify-content: center;
 
     background-color: var(--text-destaque);
-    padding: 4rem;
+    padding: 3rem;
 
     border-radius: 150px 0px;
 
@@ -59,6 +59,7 @@ section.sobre-ecotrilhas {
         border-radius: 10px;
         border: 2px solid rgb(19, 190, 19);
         transition: .5s;
+        margin-top: 1rem;
 
         &:hover {
             border-color: rgba(18, 124, 4, 0.507);
