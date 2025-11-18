@@ -9,6 +9,7 @@
 @import url(styles/metodologia.css);
 @import url(styles/parceiros.css);
 @import url(styles/trilhas.css);
+@import url(styles/mentores.css);
 @import url(styles/forms.css);
 @import url(styles/footer.css);
 
@@ -21,8 +22,8 @@
 :root {
     --cor-destaque: #46bd6a;
     --text-color: #1E1E1E;
-    --text-destaque: #4b694b;
-    --background-color: #F5FFEF;
+    --text-destaque: #0d4727;
+    --background-color: #ecf8e4;
 }
 
 

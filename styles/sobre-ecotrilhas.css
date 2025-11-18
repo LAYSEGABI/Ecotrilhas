@@ -12,8 +12,8 @@ section.sobre-ecotrilhas {
     color: rgb(233, 255, 234);
 
     & > img {
-        width: 200px;
-        margin-bottom: 1rem;
+        width: 180px;
+        margin: -3rem;
     }
 
     & .container {
@@ -27,7 +27,7 @@ section.sobre-ecotrilhas {
         margin-inline: auto;
 
         &>img {
-            width: 50%;
+            width: 45%;
         }
 
         & .descricao {
