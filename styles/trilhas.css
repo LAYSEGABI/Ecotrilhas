@@ -23,6 +23,7 @@ section.trilhas {
             color: var(--text-destaque);
             font-weight: 400;
             font-size: 2rem;
+            text-align: center;
             padding-bottom: 1rem;
         }
     }

@@ -5,6 +5,12 @@
     background: var(--background-color);
     padding: 40px 20px;
     text-align: center;
+    align-items: center;
+
+    &>img {
+            width: 50px;
+            padding-bottom: 1rem;
+        }
 }
 
 .voluntarios-section h2 {
