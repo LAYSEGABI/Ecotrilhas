@@ -1,13 +1,13 @@
 /* Seção */
-.mentores-section {
+.voluntarios-section {
     display: flex;
     flex-direction: column;
     background: var(--background-color);
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.mentores-section h2 {
+.voluntarios-section h2 {
     width: 100%;
     font-size: 28px;
     color: #1A3C2D;
@@ -15,7 +15,7 @@
     font-weight: 700;
 }
 
-.mentores-section .subtitulo {
+.voluntarios-section .subtitulo {
     color: #3f5e4f;
     margin-bottom: 40px;
     font-size: 16px;
@@ -23,7 +23,7 @@
 
 /* Grid */
 /* Grid */
-.mentores-grid {
+.voluntarios-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* sempre 3 colunas */
     gap: 30px;
@@ -34,7 +34,7 @@
 }
 
 /* Card */
-.mentores-card {
+.voluntarios-card {
     background: #fff;
     width: 260px;          /* largura padrão igual */
     min-height: 270px;     /* garante mesma altura */
@@ -48,7 +48,7 @@
     flex-direction: column;
 }
 
-.mentores-card img {
+.voluntarios-card img {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -57,21 +57,28 @@
 }
 
 
-.mentores-card h3 {
+.voluntarios-card h3 {
     font-size: 18px;
     color: #1A3C2D;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 4px; 
 }
 
-.mentores-card .origem {
+.voluntarios-card .origem {                                                  
     font-size: 14px;
     font-weight: 600;
     color: #4f7b63;
     margin-bottom: 6px;
 }
 
-.mentores-card .resumo {
+.voluntarios-card .funcao {                                                  
+    font-size: 14px;
+    font-weight: 600;
+    color: #31cc77;
+    margin-bottom: 6px;
+}
+
+.voluntarios-card .resumo {
     font-size: 14px;
     color: #3b5446;
     line-height: 1.35em;
@@ -79,13 +86,13 @@
 
 
 @media (max-width: 900px) {
-    .mentores-grid {
+    .voluntarios-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .mentores-grid {
+    .voluntarios-grid {
         grid-template-columns: 1fr;
     }
 }
