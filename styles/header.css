@@ -62,6 +62,39 @@
     }
 }
 
+.language-switch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.lang-btn img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+/* Efeito hover */
+.lang-btn:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Remover efeito de foco feio */
+.lang-btn:focus {
+    outline: none;
+}
+
 
 @media (max-width: 800px) {
     .header {
