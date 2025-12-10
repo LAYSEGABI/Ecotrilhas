@@ -66,12 +66,12 @@ const locais = [
   },
   {
     nome: "Trilha do Moçambique",
-    coords: [-27.5365, -48.4168], // Parque Rio Vermelho
+    coords: [-27.491979023911316, -48.39470470822927], // Parque Rio Vermelho
     desc: "Parque Estadual do Rio Vermelho",
   },
   {
     nome: "Lagoa do Peri",
-    coords: [-27.7282, -48.5147], // Sul da Ilha
+    coords: [-27.732916990977746, -48.5164633067727], // Sul da Ilha
     desc: "Reserva de água potável e Mata Atlântica",
   },
   {
