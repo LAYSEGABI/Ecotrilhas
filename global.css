@@ -54,13 +54,12 @@ body {
     background-color: var(--background-color);
     font-family: 'Archivo', sans-serif;
 
-    width: 100vw;
+
     overflow-x: hidden;
+
 }
 
 a {
     color: white;
     text-decoration: none;
 }
-
-

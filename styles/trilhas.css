@@ -10,6 +10,7 @@ section.trilhas {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 2rem;
 
         &>img {
             width: 50px;
@@ -24,7 +25,6 @@ section.trilhas {
             font-weight: 400;
             font-size: 2rem;
             text-align: center;
-            padding-bottom: 1rem;
         }
     }
 
@@ -56,6 +56,22 @@ section.trilhas {
             border-radius: 12px;
             overflow: hidden;
 
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 80%;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.014));
+                z-index: 1;
+            }
+
+            * {
+                position: relative;
+                z-index: 2;
+            }
+
 
             & img {
                 position: absolute;
@@ -79,7 +95,7 @@ section.trilhas {
 
         & .peri {
             grid-area: peri;
-            background-image: url('../assets/imgs/peri.png');
+            background-image: url('../assets/imgs/peri.jpg');
             height: 200px;
 
 
@@ -87,7 +103,7 @@ section.trilhas {
 
         & .pocao {
             grid-area: pocao;
-            background-image: url('../assets/imgs/pocaoo.png');
+            background-image: url('../assets/imgs/pocao.png');
             height: 200px;
 
 
@@ -103,6 +119,171 @@ section.trilhas {
     }
 }
 
+
+/* --- Estilos do Modal --- */
+.modal-container {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro transparente */
+    z-index: 2000; /* Fica acima de tudo */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-container.ativo {
+    display: flex; /* Aparece quando tem a classe ativo */
+}
+
+.modal-content {
+    background: #fff;
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh; /* Altura máxima de 90% da tela */
+    border-radius: 12px;
+    position: relative;
+    overflow-y: auto; /* Permite rolar se o conteúdo for grande */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: surgimento 0.3s ease;
+}
+
+.modal-body {
+    padding: 40px;
+}
+
+/* Botão de Fechar */
+.fechar-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+}
+
+/* --- Estilo do Carrossel Simples (Scroll Horizontal) --- */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    scroll-snap-type: x mandatory; /* Faz a rolagem ser magnética */
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 300px; /* Tamanho da imagem no carrossel */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+}
+
+/* Scrollbar do carrossel mais bonitinha */
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+.carousel::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos gerais do conteúdo */
+.modal-body h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+.modal-body h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #27ae60;
+}
+.feedbacks li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+.btn-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Animação simples de entrada */
+@keyframes surgimento {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Cursor pointer no card */
+.card {
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.418);
+    transition: .3s;
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.521);
+}
+
+/* Container para os cards de feedback */
+.feedbacks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os depoimentos */
+    margin-top: 15px;
+}
+
+/* O visual de cada depoimento */
+.feedback-card {
+    background-color: #f8f9fa; /* Fundo cinza bem clarinho */
+    border-left: 5px solid #27ae60; /* Borda verde lateral destacando a trilha */
+    padding: 15px 20px;
+    border-radius: 4px;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+/* Efeito leve ao passar o mouse */
+.feedback-card:hover {
+    transform: translateX(5px); /* Move um pouquinho para a direita */
+    background-color: #f1f1f1;
+}
+
+/* Estilização do texto do depoimento */
+.feedback-card p {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Adicionar aspas decorativas antes do texto (opcional, mas fica bonito) */
+.feedback-card::before {
+    content: "“";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 60px;
+    color: rgba(39, 174, 96, 0.1); /* Verde bem transparente */
+    font-family: serif;
+    pointer-events: none;
+}
 
 @media (max-width: 1000px) {
     section.trilhas {
@@ -124,6 +305,7 @@ section.trilhas {
 @media (max-width: 670px) {
     section.trilhas {
         padding: 4rem 1rem;
+
         & .container {
             display: grid;
             grid-template-columns: 1fr;

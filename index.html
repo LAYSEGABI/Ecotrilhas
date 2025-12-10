@@ -218,11 +218,12 @@
         <header>
             <img src="assets/icons/map-signs-solid.svg" alt="">
             <h2 data-translate="trilhas_titulo">Confira os caminhos <br> que exploramos.</h2>
+            <p>Clique nas trilhas e confira os detalhes</p>
         </header>
 
         <div class="container">
 
-            <div class="card baldinhos" data-anima="esquerda">
+            <div class="card baldinhos" data-anima="esquerda" onclick="abrirModal('modal-baldinhos')">
                 <h3 data-translate="trilha_baldinhos_titulo">Revolução dos baldinhos</h3>
                 <p data-translate="trilha_baldinhos_texto">
                     Uma imersão na região continental de Florianópolis, conhecendo a iniciativa da Revolução dos
@@ -231,7 +232,7 @@
                 </p>
             </div>
 
-            <div class="card mocambique">
+            <div class="card mocambique" onclick="abrirModal('modal-mocambique')">
                 <h3 data-translate="trilha_mocambique_titulo">Moçambique</h3>
                 <p data-translate="trilha_mocambique_texto">
                     Localizado no Parque Estadual do Rio Vermelho, é uma das maiores áreas de costões e vegetação
@@ -239,21 +240,21 @@
                 </p>
             </div>
 
-            <div class="card peri" data-anima="direita">
+            <div class="card peri" data-anima="direita" onclick="abrirModal('modal-peri')">
                 <h3 data-translate="trilha_peri_titulo">Lagoa do Peri</h3>
                 <p data-translate="trilha_peri_texto">
                     Maior lagoa de água doce da ilha, foco em preservação e políticas públicas ambientais.
                 </p>
             </div>
 
-            <div class="card pocao">
+            <div class="card pocao" onclick="abrirModal('modal-pocao')">
                 <h3 data-translate="trilha_pocao_titulo">Poção</h3>
                 <p data-translate="trilha_pocao_texto">
                     Refúgio de natureza em área urbana, às margens do bairro Córrego Grande.
                 </p>
             </div>
 
-            <div class="card matadeiro" data-anima="direita">
+            <div class="card matadeiro" data-anima="direita" onclick="abrirModal('modal-matadeiro')">
                 <h3 data-translate="trilha_matadeiro_titulo">Matadeiro</h3>
                 <p data-translate="trilha_matadeiro_texto">
                     História e resistência da comunidade local, destacando saberes ecológicos e cultura tradicional.
@@ -264,9 +265,11 @@
     </section>
 
 
+
+
     <section class="voluntarios-section">
         <img src="assets/icons/people.svg" alt="">
-        <h2 data-translate="voluntarios_titulo">Voluntários</h2>
+        <h2 data-translate="voluntarios_titulo">Pessoas Voluntárias</h2>
         <p class="subtitulo" data-translate="voluntarios_subtitulo">
             Quem nos conduziu e compartilhou seus saberes durante as caminhadas
         </p>
@@ -274,7 +277,7 @@
         <div class="voluntarios-grid">
 
             <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol1_funcao">Guia • Mentor</p>
+                <p class="funcao" data-translate="vol1_funcao">Guia • Pessoa mentora</p>
                 <img src="assets/imgs/voluntarios/miguel.png" alt="Miguel Schuste">
                 <h3 data-translate="vol1_nome">Miguel Schuster</h3>
                 <p class="origem" data-translate="vol1_origem">UFSC • LEMAC</p>
@@ -285,7 +288,7 @@
             </div>
 
             <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol2_funcao">Guia • Mentor</p>
+                <p class="funcao" data-translate="vol2_funcao">Guia • Pessoa mentora</p>
                 <img src="assets/imgs/voluntarios/luiz.png" alt="Luiz Serigheli">
                 <h3 data-translate="vol2_nome">Luiz Serigheli</h3>
                 <p class="origem" data-translate="vol2_origem">Global Shapers • Florianópolis</p>
@@ -307,7 +310,7 @@
             </div>
 
             <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol4_funcao">Mentor</p>
+                <p class="funcao" data-translate="vol4_funcao">Pessoa mentora</p>
                 <img src="assets/imgs/voluntarios/dan.png" alt="Dan Baron">
                 <h3 data-translate="vol4_nome">Dan Baron</h3>
                 <p class="origem" data-translate="vol4_origem">Instituto Transformance</p>
@@ -329,7 +332,7 @@
             </div>
 
             <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol6_funcao">Mentor</p>
+                <p class="funcao" data-translate="vol6_funcao">Pessoa mentora</p>
                 <img src="assets/imgs/voluntarios/azania.png" alt="Azania Mahin">
                 <h3 data-translate="vol6_nome">Azania Mahin</h3>
                 <p class="origem" data-translate="vol6_origem">Territórios Negros em Florianópolis</p>
@@ -340,7 +343,7 @@
             </div>
 
             <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol7_funcao">Mentor</p>
+                <p class="funcao" data-translate="vol7_funcao">Pessoa mentora</p>
                 <img src="assets/imgs/voluntarios/denise.png" alt="Denise Siqueira">
                 <h3 data-translate="vol7_nome">Denise Siqueira</h3>
                 <p class="origem" data-translate="vol7_origem">Ecoando Sustentabilidade</p>
@@ -351,7 +354,7 @@
             </div>
 
             <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol8_funcao">Mentor</p>
+                <p class="funcao" data-translate="vol8_funcao">Pessoa mentora</p>
                 <img src="assets/imgs/voluntarios/sara.png" alt="Sara Borém">
                 <h3 data-translate="vol8_nome">Sara Borém</h3>
                 <p class="origem" data-translate="vol8_origem">Projeto Centro Leste Menos Lixo</p>
@@ -503,6 +506,221 @@
         </div>
     </footer>
 
+    <div id="modal-baldinhos" class="modal-container" onclick="fecharModal(event, 'modal-baldinhos')">
+        <div class="modal-content">
+            <button class="fechar-btn" onclick="fecharModal(event, 'modal-baldinhos')">&times;</button>
+            <div class="modal-body">
+                <h2>Revolução dos Baldinhos</h2>
+
+                <div class="carousel">
+                    <img src="assets/trilhas/baldinhos1.jpg" alt="Baldinhos 1">
+                    <img src="assets/trilhas/baldinhos2.jpg" alt="Baldinhos 2">
+                    <img src="assets/trilhas/baldinhos3.jpg" alt="Baldinhos 3">
+                </div>
+
+                <p class="descricao">
+                    A trilha urbana pela Revolução dos Baldinhos revela um dos exemplos mais emblemáticos de
+                    transformação comunitária em Florianópolis. [cite_start]No alto do Monte Serrat, moradores se
+                    organizaram para construir uma solução que unia cuidado ambiental, justiça social e autonomia
+                    territorial[cite: 32, 33].
+                    <br><br>
+                    Com baldinhos distribuídos de casa em casa, o bairro passou a coletar o lixo orgânico de forma
+                    descentralizada, transformando-o em composto por meio de técnicas simples e comunitárias.
+                    [cite_start]Essa lógica circular criou um modelo de economia solidária, no qual resíduos se tornam
+                    recurso, e a comunidade se fortalece ao assumir o protagonismo sobre sua própria qualidade de
+                    vida[cite: 35, 37].
+                    <br><br>
+                    [cite_start]A Revolução dos Baldinhos tornou visível que soluções simples, quando guiadas por
+                    comunidade, educação e cuidado, têm força para transformar realidades inteiras[cite: 41].
+                </p>
+
+                <h3>O que os participantes disseram:</h3>
+                <ul class="feedbacks">
+                    [cite_start]<li>"Achei muito potente a ideia de que 'a planta impõe respeito' e como áreas com
+                        cultivo conseguem transformar espaços antes marcados pelo lixo." [cite: 147]</li>
+                    [cite_start]<li>"Surpreendeu perceber como a compostagem nasce como uma solução simples para um
+                        problema do cotidiano (ratos), mas se expande para ações profundamente transformadoras." [cite:
+                        152]</li>
+                    [cite_start]<li>"Ficou evidente a potência do conhecimento popular aliado a práticas ecológicas."
+                        [cite: 39]</li>
+                </ul>
+
+                <div class="links-uteis">
+                    <a target="_blank" href="https://www.instagram.com/revolucaodosbaldinhos" class="btn-link">Conheça o
+                        Projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-peri" class="modal-container" onclick="fecharModal(event, 'modal-peri')">
+
+        <div class="modal-content">
+            <button class="fechar-btn" onclick="fecharModal(event, 'modal-peri')">&times;</button>
+
+            <div class="modal-body">
+                <h2>Lagoa do Peri</h2>
+
+                <div class="carousel">
+                    <img src="assets/trilhas/peri1.jpg" alt="Foto Peri 1">
+                    <img src="assets/trilhas/peri2.jpg" alt="Foto Peri 2">
+                    <img src="assets/trilhas/peri3.jpg" alt="Foto Peri 3">
+                    <img src="assets/trilhas/peri4.jpg" alt="Foto Peri 4">
+                    <img src="assets/trilhas/peri5.jpg" alt="Foto Peri 5">
+                </div>
+
+                <p class="descricao">
+                    A trilha da Lagoa do Peri revela a maior reserva de água potável de Florianópolis e um dos últimos
+                    remanescentes contínuos de Mata Atlântica da ilha. Durante a caminhada, os jovens descobrem que a
+                    floresta atua como um filtro natural, protegendo nascentes, estabilizando o solo e regulando o fluxo
+                    hídrico.
+                    <br><br>
+                    A paisagem atual é fruto de um processo histórico: a área já foi usada para agricultura familiar e,
+                    com
+                    o tempo, passou por recuperação ambiental, tornando-se parte do Monumento Natural Municipal da Lagoa
+                    do
+                    Peri (MONA).
+                    O parque é reconhecido internacionalmente pelo selo Bandeira Azul, destacando educação ambiental,
+                    turismo sustentável e preservação da água.
+                </p>
+
+                <h3>Feedbacks dos participantes</h3>
+                <ul class="feedbacks">
+                    <li>Como você percebe a relação entre biodiversidade e qualidade da água após a trilha?</li>
+                    <li>Que curiosidades você aprendeu sobre a comunidade indígena Peri?</li>
+                    <li>De que forma as lendas locais influenciam o respeito ao ambiente?</li>
+                </ul>
+
+                <div class="links-uteis">
+                    <a target="_blank" href="https://www.pmf.sc.gov.br/" class="btn-link">Site Prefeitura (MONA)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mocambique" class="modal-container" onclick="fecharModal(event, 'modal-mocambique')">
+        <div class="modal-content">
+            <button class="fechar-btn" onclick="fecharModal(event, 'modal-mocambique')">&times;</button>
+            <div class="modal-body">
+                <h2>Moçambique</h2>
+
+                <div class="carousel">
+                    <img src="assets/trilhas/mocambique1.jpg" alt="Moçambique 1">
+                    <img src="assets/trilhas/mocambique2.jpg" alt="Moçambique 2">
+                    <img src="assets/trilhas/mocambique3.jpg" alt="Moçambique 3">
+                </div>
+
+                <p class="descricao">
+                    A trilha pelo Parque Estadual do Rio Vermelho revelou um dos cenários mais emblemáticos da relação
+                    entre conservação e intervenção humana na Ilha. [cite_start]Um dos elementos centrais foi o contato
+                    com o problema das espécies invasoras, principalmente o pinus, introduzido décadas atrás[cite: 44,
+                    46].
+                    <br><br>
+                    Durante a caminhada, tornou-se claro como essa espécie altera o solo e dificulta a regeneração das
+                    plantas nativas. [cite_start]A trilha incluiu uma vivência prática de manejo ambiental: a retirada
+                    manual dos pinus jovens[cite: 48, 50].
+                    <br><br>
+                    [cite_start]Ao final, a experiência reforça que restaurar Moçambique não é apenas um trabalho
+                    técnico: é um ato de cuidado com o futuro da ilha, exigindo participação ativa da sociedade[cite:
+                    55, 56].
+                </p>
+
+                <h3>O que os participantes disseram:</h3>
+                <ul class="feedbacks">
+                    [cite_start]<li>"Descobri que o plantio de pinus nos anos 60 foi uma escolha deliberada... uma
+                        tentativa de resolver um problema criando outro." [cite: 87]</li>
+                    [cite_start]<li>"Participar da retirada dos pinus me fez perceber de forma muito concreta como uma
+                        espécie invasora é capaz de alterar um ecossistema inteiro." [cite: 91]</li>
+                    [cite_start]<li>"Puxar as mudas e sentir a resistência das raízes trouxe uma sensação de liberação e
+                        propósito." [cite: 98, 99]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-pocao" class="modal-container" onclick="fecharModal(event, 'modal-pocao')">
+        <div class="modal-content">
+            <button class="fechar-btn" onclick="fecharModal(event, 'modal-pocao')">&times;</button>
+            <div class="modal-body">
+                <h2>Poção</h2>
+
+                <div class="carousel">
+                    <img src="assets/imgs/trilhas/pocao1.png" alt="Poção 1">
+                    <img src="assets/imgs/trilhas/pocao2.png" alt="Poção 2">
+                    <img src="assets/imgs/pocao.png" alt="Poção 3">
+                </div>
+
+                <p class="descricao">
+                    A trilha do Poção é um dos ambientes naturais mais simbólicos da região da UFSC. O caminho atravessa
+                    um vale onde a água moldou rochas e alimentou nascentes. [cite_start]No entanto, ambientes populares
+                    sofrem forte pressão antrópica, como pisoteio e descarte de resíduos[cite: 59, 60, 61].
+                    <br><br>
+                    Um aspecto essencial é o papel ativo de estudantes e voluntários que desenvolvem ações de limpeza e
+                    manejo de espécies invasoras. [cite_start]Preservar o Poção é garantir que esse espaço continue
+                    sendo um refúgio ecológico e educativo[cite: 63, 66].
+                </p>
+
+                <h3>O que os participantes disseram:</h3>
+                <div class="feedbacks-container">
+                
+                <div class="feedback-card">
+                    <p>"Extremamente importante ter um equilíbrio na fauna e flora para a natureza não ter problemas de extinção em massa e desequilíbrios maiores."</p>
+                </div>
+
+                <div class="feedback-card">
+                    <p>"Uma curiosidade que aprendi e não sabia: tanto a abelha do mel quanto os saguis são espécies invasoras na região." </p>
+                </div>
+
+                <div class="feedback-card">
+                    <p>"Percebo o impacto ecológico que as espécies invasoras possuem e o impacto do ser humano nisso também." </p>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal-matadeiro" class="modal-container" onclick="fecharModal(event, 'modal-matadeiro')">
+        <div class="modal-content">
+            <button class="fechar-btn" onclick="fecharModal(event, 'modal-matadeiro')">&times;</button>
+            <div class="modal-body">
+                <h2>Matadeiro e Armação</h2>
+
+                <div class="carousel">
+                    <img src="assets/trilhas/matadeiro1.jpg" alt="Matadeiro 1">
+                    <img src="assets/trilhas/matadeiro2.jpg" alt="Matadeiro 2">
+                    <img src="assets/trilhas/matadeiro3.jpg" alt="Matadeiro 3">
+                </div>
+
+                <p class="descricao">
+                    Essa trilha representou um mergulho profundo na história baleeira de Florianópolis. A antiga
+                    “armação baleeira” funcionou como um polo industrial no Brasil colonial. [cite_start]A trilha
+                    abordou o declínio dessa atividade e a transformação da região em um ponto de observação e
+                    preservação da baleia-franca[cite: 20, 21, 25].
+                    <br><br>
+                    Um momento marcante foi a visita ao Sr. Aldo, pescador tradicional que compartilhou histórias
+                    transmitidas por gerações. [cite_start]O nome "Matadeiro" remonta justamente a esse passado de
+                    matança das baleias, uma memória dolorosa mas necessária para a compreensão do território[cite: 26,
+                    129].
+                    <br><br>
+                    [cite_start]Hoje, a região simboliza a transição da exploração intensiva para a valorização do
+                    patrimônio natural e cultural[cite: 30].
+                </p>
+
+                <h3>O que os participantes disseram:</h3>
+                <ul class="feedbacks">
+                    [cite_start]<li>"O que mais me marcou foi a fala do Seu Aldo: 'Enquanto existir a natureza, não
+                        existe homem sábio'. Isso revela que somos pequenos diante da força dos ciclos naturais." [cite:
+                        136, 138]</li>
+                    [cite_start]<li>"Foi um choque silencioso saber que o mar chegava a ser pintado de vermelho pelo
+                        sangue das baleias no Matadeiro." [cite: 130, 131]</li>
+                    [cite_start]<li>"Entendi como a caça às baleias foi estruturante para a economia e cultura da época,
+                        mesmo que hoje a gente reflita sobre os impactos." [cite: 106]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="main.js"></script>
     <script src="traducao.js"></script>
