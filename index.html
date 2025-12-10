@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/icons/folha.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="global.css">
     <title>Ecotrilhas</title>
 </head>
@@ -214,42 +219,47 @@
     </section>
 
     <section class="metricas" id="resultados">
-    <div class="container">
-        <header>
-             <img src="assets/icons/lupa.svg" alt="">
-            <h2 data-translate="metricas_titulo">Resultados e Aprendizados</h2>
-            <p data-translate="metricas_subtitulo">Transparência sobre nossa primeira edição piloto.</p>
-        </header>
+        <div class="container">
+            <header>
+                <img src="assets/icons/lupa.svg" alt="">
+                <h2 data-translate="metricas_titulo">Resultados e Aprendizados</h2>
+                <p data-translate="metricas_subtitulo">Transparência sobre nossa primeira edição piloto.</p>
+            </header>
 
-        <div class="metricas-grid">
-            <div class="metrica-card">
-                <span class="numero">10</span>
-                <span class="legenda" data-translate="metrica_inscritos">Jovens<br>Inscritos</span>
+            <div class="metricas-grid">
+                <div class="metrica-card">
+                    <span class="numero">10</span>
+                    <span class="legenda" data-translate="metrica_inscritos">Jovens<br>Inscritos</span>
+                </div>
+                <div class="metrica-card">
+                    <span class="numero">75%</span>
+                    <span class="legenda" data-translate="metrica_frequencia">Frequência<br>Mínima</span>
+                </div>
+                <div class="metrica-card destaque">
+                    <span class="numero">03</span>
+                    <span class="legenda" data-translate="metrica_certificados">Líderes<br>Certificados</span>
+                </div>
             </div>
-            <div class="metrica-card">
-                <span class="numero">75%</span>
-                <span class="legenda" data-translate="metrica_frequencia">Frequência<br>Mínima</span>
-            </div>
-            <div class="metrica-card destaque">
-                <span class="numero">03</span>
-                <span class="legenda" data-translate="metrica_certificados">Líderes<br>Certificados</span>
+
+            <div class="metricas-texto">
+                <h3 data-translate="metrica_analise_titulo">Desafios e Superações</h3>
+                <p data-translate="metrica_texto_1">
+                    Durante o processo, o projeto enfrentou desafios naturais de uma edição piloto. Embora tenhamos
+                    iniciado com 10 jovens engajados, fatores externos impactaram a jornada.
+                </p>
+                <p data-translate="metrica_texto_2">
+                    <strong>O Fator Climático:</strong> Em diversos momentos, fortes períodos de chuva obrigaram o
+                    adiamento de trilhas e mudanças bruscas no cronograma, o que impactou a continuidade de alguns
+                    participantes.
+                </p>
+                <p data-translate="metrica_texto_3">
+                    Apesar disso, a conclusão de 3 jovens com excelência (avaliada através de taxa de conclusão,
+                    formulários qualitativos e engajamento prático) valida nossa metodologia e nos traz aprendizados
+                    valiosos para adaptar o calendário das próximas edições.
+                </p>
             </div>
         </div>
-
-        <div class="metricas-texto">
-            <h3 data-translate="metrica_analise_titulo">Desafios e Superações</h3>
-            <p data-translate="metrica_texto_1">
-                Durante o processo, o projeto enfrentou desafios naturais de uma edição piloto. Embora tenhamos iniciado com 10 jovens engajados, fatores externos impactaram a jornada.
-            </p>
-            <p data-translate="metrica_texto_2">
-                <strong>O Fator Climático:</strong> Em diversos momentos, fortes períodos de chuva obrigaram o adiamento de trilhas e mudanças bruscas no cronograma, o que impactou a continuidade de alguns participantes.
-            </p>
-            <p data-translate="metrica_texto_3">
-                Apesar disso, a conclusão de 3 jovens com excelência (avaliada através de taxa de conclusão, formulários qualitativos e engajamento prático) valida nossa metodologia e nos traz aprendizados valiosos para adaptar o calendário das próximas edições.
-            </p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <section class="trilhas">
@@ -301,7 +311,15 @@
 
         </div>
     </section>
-
+    
+    <section class="mapa-section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #1a4d2e;">
+            Por onde passamos
+        </h2>
+        <div id="mapa-ecotrilhas"></div>
+    </div>
+</section>
 
 
 
@@ -574,16 +592,19 @@
 
                 <div class="feedbacks-container">
                     <div class="feedback-card">
-                        <p data-translate="modal_baldinhos_feed1">"Achei muito potente a ideia de que 'a planta impõe respeito' e como áreas com cultivo
+                        <p data-translate="modal_baldinhos_feed1">"Achei muito potente a ideia de que 'a planta impõe
+                            respeito' e como áreas com cultivo
                             conseguem transformar espaços antes marcados pelo lixo e pela ausência de cuidado."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_baldinhos_feed2">"O que mais me surpreendeu foi perceber como a compostagem nasce como uma solução simples
+                        <p data-translate="modal_baldinhos_feed2">"O que mais me surpreendeu foi perceber como a
+                            compostagem nasce como uma solução simples
                             para um problema do cotidiano, mas se expande para ações profundamente transformadoras
                             dentro da comunidade."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_baldinhos_feed3">"O projeto vai muito além da gestão de resíduos: é uma porta de entrada para discutir
+                        <p data-translate="modal_baldinhos_feed3">"O projeto vai muito além da gestão de resíduos: é uma
+                            porta de entrada para discutir
                             economia circular, soberania alimentar e racismo ambiental. Ampliou completamente minha
                             visão."</p>
                     </div>
@@ -611,32 +632,38 @@
                     hídrico.
                     <br><br>
                     A paisagem atual é fruto de um processo histórico: a área já foi usada para agricultura familiar e,
-                    com o tempo, passou por recuperação ambiental, tornando-se parte do Monumento Natural Municipal da Lagoa
+                    com o tempo, passou por recuperação ambiental, tornando-se parte do Monumento Natural Municipal da
+                    Lagoa
                     do Peri (MONA).
                     O parque é reconhecido internacionalmente pelo selo Bandeira Azul, destacando educação ambiental,
                     turismo sustentável e preservação da água.
                 </p>
 
-                <h3 data-translate="modal_feedback_intro">O que os participantes disseram:</h3> <div class="feedbacks-container">
+                <h3 data-translate="modal_feedback_intro">O que os participantes disseram:</h3>
+                <div class="feedbacks-container">
                     <div class="feedback-card">
-                        <p data-translate="modal_peri_feed1">"Depois da trilha, ficou muito claro para mim que a mata e a biodiversidade local são
+                        <p data-translate="modal_peri_feed1">"Depois da trilha, ficou muito claro para mim que a mata e
+                            a biodiversidade local são
                             fundamentais não só para o equilíbrio ambiental, mas também para a própria sobrevivência da
                             região."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_peri_feed2">"Fiquei intrigada com a presença de diferentes espécies de vanilla na ilha e com o fato de
+                        <p data-translate="modal_peri_feed2">"Fiquei intrigada com a presença de diferentes espécies de
+                            vanilla na ilha e com o fato de
                             que a areia conta uma história geológica de quase um milhão de anos. Esse detalhe amplia
                             nossa percepção de tempo."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_peri_feed3">"Chamou atenção perceber como tudo está interligado: a serrapilheira que mantém o solo vivo,
+                        <p data-translate="modal_peri_feed3">"Chamou atenção perceber como tudo está interligado: a
+                            serrapilheira que mantém o solo vivo,
                             a restinga, as aves marinhas e até a importância das técnicas tradicionais adaptadas ao
                             território."</p>
                     </div>
                 </div>
 
                 <div class="links-uteis">
-                    <a target="_blank" href="https://www.pmf.sc.gov.br/" class="btn-link" data-translate="modal_peri_btn">Site Prefeitura (MONA)</a>
+                    <a target="_blank" href="https://www.pmf.sc.gov.br/" class="btn-link"
+                        data-translate="modal_peri_btn">Site Prefeitura (MONA)</a>
                 </div>
             </div>
         </div>
@@ -669,28 +696,32 @@
 
                 <div class="feedbacks-container">
                     <div class="feedback-card">
-                        <p data-translate="modal_mocambique_feed1">"O que mais me chamou atenção foi descobrir que o plantio de pinus nos anos 60 foi uma
+                        <p data-translate="modal_mocambique_feed1">"O que mais me chamou atenção foi descobrir que o
+                            plantio de pinus nos anos 60 foi uma
                             escolha deliberada, uma tentativa de resolver um problema criando outro."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_mocambique_feed2">"Participar da retirada dos pinus me fez perceber de forma muito concreta como uma espécie
+                        <p data-translate="modal_mocambique_feed2">"Participar da retirada dos pinus me fez perceber de
+                            forma muito concreta como uma espécie
                             invasora é capaz de alterar um ecossistema inteiro, competindo com as nativas."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_mocambique_feed3">"Puxar as mudas e sentir a resistência das raízes me fez entender o tamanho do trabalho. Foi
+                        <p data-translate="modal_mocambique_feed3">"Puxar as mudas e sentir a resistência das raízes me
+                            fez entender o tamanho do trabalho. Foi
                             uma ação direta, concreta, que gera impacto real e sensação de propósito."</p>
                     </div>
                 </div>
 
                 <div class="links-uteis" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
-                    <p style="margin-bottom: 15px; font-size: 0.95rem; color: #555;" data-translate="modal_mocambique_livro_texto">
+                    <p style="margin-bottom: 15px; font-size: 0.95rem; color: #555;"
+                        data-translate="modal_mocambique_livro_texto">
                         Para quem quiser se aprofundar no tema das plantas invasoras, vale conhecer o livro
                         "ALTERNATIVAS", desenvolvido pelo grupo LEIMAC-UFSC (@invasoesbiologicas) - um guia ilustrado
                         para reconhecimento e substituição de plantas exóticas invasoras por espécies nativas no litoral
                         de Santa Catarina. O material está disponível de forma digital e gratuita!
                     </p>
-                    <a target="_blank" href="https://repositorio.ufsc.br/handle/123456789/254155"
-                        class="btn-link" data-translate="modal_mocambique_livro_btn">Baixar Livro (UFSC)</a>
+                    <a target="_blank" href="https://repositorio.ufsc.br/handle/123456789/254155" class="btn-link"
+                        data-translate="modal_mocambique_livro_btn">Baixar Livro (UFSC)</a>
                 </div>
             </div>
         </div>
@@ -722,15 +753,18 @@
 
                 <div class="feedbacks-container">
                     <div class="feedback-card">
-                        <p data-translate="modal_pocao_feed1">"Extremamente importante ter um equilíbrio na fauna e flora para a natureza não ter problemas
+                        <p data-translate="modal_pocao_feed1">"Extremamente importante ter um equilíbrio na fauna e
+                            flora para a natureza não ter problemas
                             de extinção em massa e desequilíbrios maiores."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_pocao_feed2">"Uma curiosidade que aprendi e não sabia: tanto a abelha do mel quanto os saguis são espécies
+                        <p data-translate="modal_pocao_feed2">"Uma curiosidade que aprendi e não sabia: tanto a abelha
+                            do mel quanto os saguis são espécies
                             invasoras na região." </p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_pocao_feed3">"Percebo o impacto ecológico que as espécies invasoras possuem e o impacto do ser humano
+                        <p data-translate="modal_pocao_feed3">"Percebo o impacto ecológico que as espécies invasoras
+                            possuem e o impacto do ser humano
                             nisso também." </p>
                     </div>
                 </div>
@@ -768,16 +802,19 @@
 
                 <div class="feedbacks-container">
                     <div class="feedback-card">
-                        <p data-translate="modal_matadeiro_feed1">"Um dos momentos que mais me marcou foi uma fala do Seu Aldo: 'Enquanto existir a natureza,
+                        <p data-translate="modal_matadeiro_feed1">"Um dos momentos que mais me marcou foi uma fala do
+                            Seu Aldo: 'Enquanto existir a natureza,
                             não existe homem sábio'. Isso revela que somos pequenos diante da força dos ciclos
                             naturais."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_matadeiro_feed2">"Foi um choque silencioso saber que o mar chegava a ser pintado de vermelho pelo sangue das
+                        <p data-translate="modal_matadeiro_feed2">"Foi um choque silencioso saber que o mar chegava a
+                            ser pintado de vermelho pelo sangue das
                             baleias no Matadeiro. É uma memória dolorosa, mas importante de escutar."</p>
                     </div>
                     <div class="feedback-card">
-                        <p data-translate="modal_matadeiro_feed3">"Entendi como a caça às baleias foi estruturante para a economia e cultura da época. Não é só
+                        <p data-translate="modal_matadeiro_feed3">"Entendi como a caça às baleias foi estruturante para
+                            a economia e cultura da época. Não é só
                             um capítulo isolado, ajuda a entender como se estruturaram comunidades inteiras."</p>
                     </div>
                 </div>

@@ -64,3 +64,16 @@ a {
     color: white;
     text-decoration: none;
 }
+
+#mapa-ecotrilhas {
+    height: 450px; /* Altura do mapa */
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    z-index: 1; /* Garante que fique abaixo do menu se ele for fixo */
+}
+
+.mapa-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
