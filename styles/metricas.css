@@ -1,0 +1,101 @@
+.metricas {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Um fundo leve para separar da metodologia */
+    text-align: center;
+}
+
+.metricas header h2 {
+     font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0px;
+            line-height: .9;
+            color: var(--text-destaque);
+            font-weight: 400;
+            font-size: 2rem;
+            text-align: center;
+}
+
+.metricas header img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.metricas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.metrica-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 180px;
+    transition: transform 0.3s ease;
+    border-bottom: 4px solid #ccc;
+}
+
+.metrica-card.destaque {
+    border-bottom: 4px solid #27ae60; /* Verde destaque para os certificados */
+}
+
+.metrica-card:hover {
+    transform: translateY(-5px);
+}
+
+.metrica-card .numero {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a4d2e;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.metrica-card .legenda {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metricas-texto {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.199);
+    border-radius: 12px;
+    border-left: 5px solid #1a4d2e;
+}
+
+.metricas-texto h3 {
+    color: #1a4d2e;
+    margin-bottom: 20px;
+}
+
+.metricas-texto p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .metricas-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .metrica-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .metricas-texto {
+        padding: 20px;
+    }
+}
