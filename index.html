@@ -7,17 +7,18 @@
     <link rel="shortcut icon" href="assets/icons/folha.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Ecotrilhas</title>
 </head>
 
 <body>
 
     <header class="header">
-        <img src="./assets/imgs/logo-eco-glo.png" alt="">
+        <img src="./assets/logoBranca.svg" alt="">
         <nav>
             <a href="#sobre-nos" data-translate="nav_sobre">Sobre nós</a>
             <a href="#ecotrilhas" data-translate="nav_participar">Como participar</a>
@@ -311,15 +312,15 @@
 
         </div>
     </section>
-    
+
     <section class="mapa-section">
-    <div class="container">
-        <h2 data-translate="mapa_titulo" style="text-align: center; margin-bottom: 20px; color: #1a4d2e;">
-            Por onde passamos
-        </h2>
-        <div id="mapa-ecotrilhas"></div>
-    </div>
-</section>
+        <div class="container">
+            <h2 data-translate="mapa_titulo" style="text-align: center; margin-bottom: 20px; color: #1a4d2e;">
+                Por onde passamos
+            </h2>
+            <div id="mapa-ecotrilhas"></div>
+        </div>
+    </section>
 
 
 
@@ -332,95 +333,125 @@
 
         <div class="voluntarios-grid">
 
-            <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol1_funcao">Guia • Pessoa mentora</p>
-                <img src="assets/imgs/voluntarios/miguel.png" alt="Miguel Schuste">
-                <h3 data-translate="vol1_nome">Miguel Schuster</h3>
-                <p class="origem" data-translate="vol1_origem">UFSC • LEMAC</p>
-                <p class="resumo" data-translate="vol1_resumo">
-                    Pesquisador do litoral sul catarinense, atua em educação ambiental, ecodesign e
-                    comunidades tradicionais.
-                </p>
-            </div>
-
-            <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol2_funcao">Guia • Pessoa mentora</p>
-                <img src="assets/imgs/voluntarios/luiz.png" alt="Luiz Serigheli">
-                <h3 data-translate="vol2_nome">Luiz Serigheli</h3>
-                <p class="origem" data-translate="vol2_origem">Global Shapers • Florianópolis</p>
-                <p class="resumo" data-translate="vol2_resumo">
-                    Mestre em ecologia, atua com educação ambiental, desenvolvimento comunitário e
-                    transformação social.
-                </p>
-            </div>
-
-            <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol3_funcao">Guia</p>
-                <img src="assets/imgs/voluntarios/gabriel.png" alt="Gabriel da Costa">
-                <h3 data-translate="vol3_nome">Gabriel S. da Costa</h3>
-                <p class="origem" data-translate="vol3_origem">Projeto Peabiru</p>
-                <p class="resumo" data-translate="vol3_resumo">
-                    Condutor ambiental e professor de geografia, atua com pesquisa histórica, educação e
-                    trilhas na região da Lagoa.
-                </p>
-            </div>
-
-            <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol4_funcao">Pessoa mentora</p>
-                <img src="assets/imgs/voluntarios/dan.png" alt="Dan Baron">
-                <h3 data-translate="vol4_nome">Dan Baron</h3>
-                <p class="origem" data-translate="vol4_origem">Instituto Transformance</p>
-                <p class="resumo" data-translate="vol4_resumo">
-                    Arte-educador e coreógrafo, trabalha com dança comunitária e criatividade social entre
-                    Brasil e Amazônia.
-                </p>
-            </div>
-
-            <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol5_funcao">Guia</p>
-                <img src="assets/imgs/voluntarios/cintia.png" alt="Cíntia Cruz">
-                <h3 data-translate="vol5_nome">Cíntia Cruz</h3>
-                <p class="origem" data-translate="vol5_origem">Associação Revolução dos Baldinhos</p>
-                <p class="resumo" data-translate="vol5_resumo">
-                    Líder comunitária e ativista, coordena a Cozinha Mãe e projetos de alimentação,
-                    cuidado e solidariedade.
-                </p>
-            </div>
-
-            <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol6_funcao">Pessoa mentora</p>
-                <img src="assets/imgs/voluntarios/azania.png" alt="Azania Mahin">
-                <h3 data-translate="vol6_nome">Azania Mahin</h3>
-                <p class="origem" data-translate="vol6_origem">Territórios Negros em Florianópolis</p>
-                <p class="resumo" data-translate="vol6_resumo">
-                    Graduada e mestre em geografia pela UFSC, está desenvolvendo sua pesquisa sobre
-                    territórios negros no Brasil e Estados Unidos.
-                </p>
-            </div>
-
-            <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol7_funcao">Pessoa mentora</p>
-                <img src="assets/imgs/voluntarios/denise.png" alt="Denise Siqueira">
-                <h3 data-translate="vol7_nome">Denise Siqueira</h3>
-                <p class="origem" data-translate="vol7_origem">Ecoando Sustentabilidade</p>
-                <p class="resumo" data-translate="vol7_resumo">
-                    Surfista, pesquisadora e ativista. Doutoranda bolsista CNPq e tecnica-administrativa
-                    na UFSC.
-                </p>
-            </div>
-
-            <div class="voluntarios-card">
-                <p class="funcao" data-translate="vol8_funcao">Pessoa mentora</p>
-                <img src="assets/imgs/voluntarios/sara.png" alt="Sara Borém">
-                <h3 data-translate="vol8_nome">Sara Borém</h3>
-                <p class="origem" data-translate="vol8_origem">Projeto Centro Leste Menos Lixo</p>
-                <p class="resumo" data-translate="vol8_resumo">
-                    Engenheira sanitarista e Ambiental formada pela UFSC e atua como gestora de
-                    sustentabilidade em eventos culturais.
-                </p>
-            </div>
-
+    <div class="voluntarios-card">
+        <p class="funcao" data-translate="vol1_funcao">Guia • Pessoa mentora</p>
+        <img src="assets/imgs/voluntarios/miguel.png" alt="Miguel Schuster">
+        <h3 data-translate="vol1_nome">Miguel Schuster</h3>
+        <p class="origem" data-translate="vol1_origem">UFSC • LEMAC</p>
+        <p class="resumo" data-translate="vol1_resumo">
+            Pesquisador do litoral sul catarinense, atua em educação ambiental, ecodesign e
+            comunidades tradicionais.
+        </p>
+        <div class="card-social">
+            <a href="https://www.instagram.com/miguelschust" title="Instagram Miguel" target="_blank" class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/miguel-koerig-schuster-14a518288" title="LinkedIn Miguel" target="_blank" class="btn-social linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+             <a href="https://www.instagram.com/invasoesbiologicas?igsh=NDJ6c3ZzaXlpMXox" title="Instagram LEMAC" target="_blank" title="Instagram " class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
+    </div>
+
+    <div class="voluntarios-card">
+        <p class="funcao" data-translate="vol2_funcao">Guia • Pessoa mentora</p>
+        <img src="assets/imgs/voluntarios/luiz.png" alt="Luiz Serigheli">
+        <h3 data-translate="vol2_nome">Luiz Serigheli</h3>
+        <p class="origem" data-translate="vol2_origem">Global Shapers • Florianópolis</p>
+        <p class="resumo" data-translate="vol2_resumo">
+            Mestre em ecologia, atua com educação ambiental, desenvolvimento comunitário e
+            transformação social.
+        </p>
+        <div class="card-social">
+            <a href="https://www.instagram.com/luizserigheli" title="Instagram Luiz" target="_blank" class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/luizfelipecserigheli" target="_blank" class="btn-social linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <div class="voluntarios-card">
+        <p class="funcao" data-translate="vol3_funcao">Guia</p>
+        <img src="assets/imgs/voluntarios/gabriel.png" alt="Gabriel da Costa">
+        <h3 data-translate="vol3_nome">Gabriel S. da Costa</h3>
+        <p class="origem" data-translate="vol3_origem">Projeto Peabiru</p>
+        <p class="resumo" data-translate="vol3_resumo">
+            Condutor ambiental e professor de geografia, atua com pesquisa histórica, educação e
+            trilhas na região da Lagoa.
+        </p>
+        <div class="card-social">
+            <a href="https://www.instagram.com/gabriel.peabiru" title="Instagram Gabriel" target="_blank" class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/peabirutrilhas" title="Instagram Projeto Peabiru" target="_blank" class="btn-social link-extra" title="Projeto Peabiru"><i class="fa-solid fa-link"></i></a>
+        </div>
+    </div>
+
+    <div class="voluntarios-card">
+        <p class="funcao" data-translate="vol4_funcao">Pessoa mentora</p>
+        <img src="assets/imgs/voluntarios/dan.png" alt="Dan Baron">
+        <h3 data-translate="vol4_nome">Dan Baron</h3>
+        <p class="origem" data-translate="vol4_origem">Instituto Transformance</p>
+        <p class="resumo" data-translate="vol4_resumo">
+            Arte-educador e coreógrafo, trabalha com dança comunitária e criatividade social entre
+            Brasil e Amazônia.
+        </p>
+        <div class="card-social">
+            <a href="https://www.instagram.com/dan.baron.21" title="Instagram Dan" target="_blank" class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="voluntarios-card">
+        <p class="funcao" data-translate="vol5_funcao">Guia</p>
+        <img src="assets/imgs/voluntarios/cintia.png" alt="Cíntia Cruz">
+        <h3 data-translate="vol5_nome">Cíntia Cruz</h3>
+        <p class="origem" data-translate="vol5_origem">Associação Revolução dos Baldinhos</p>
+        <p class="resumo" data-translate="vol5_resumo">
+            Líder comunitária e ativista, coordena a Cozinha Mãe e projetos de alimentação,
+            cuidado e solidariedade.
+        </p>
+        <div class="card-social">
+            <a href="https://www.instagram.com/cintiarevolucao" title="Instagram Cíntia" target="_blank" class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/revolucaodosbaldinhos" title="Instagram Revolução dos Baldinhos" target="_blank" class="btn-social link-extra" title="Revolução dos Baldinhos"><i class="fa-solid fa-link"></i></a>
+        </div>
+    </div>
+
+    <div class="voluntarios-card">
+        <p class="funcao" data-translate="vol6_funcao">Pessoa mentora</p>
+        <img src="assets/imgs/voluntarios/azania.png" alt="Azania Mahin">
+        <h3 data-translate="vol6_nome">Azania Mahin</h3>
+        <p class="origem" data-translate="vol6_origem">Territórios Negros em Florianópolis</p>
+        <p class="resumo" data-translate="vol6_resumo">
+            Graduada e mestre em geografia pela UFSC, está desenvolvendo sua pesquisa sobre
+            territórios negros no Brasil e Estados Unidos.
+        </p>
+        <div class="card-social">
+            <a href="https://www.instagram.com/azania.mahin" title="Instagram Azania" target="_blank" class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="voluntarios-card">
+        <p class="funcao" data-translate="vol7_funcao">Pessoa mentora</p>
+        <img src="assets/imgs/voluntarios/denise.png" alt="Denise Siqueira">
+        <h3 data-translate="vol7_nome">Denise Siqueira</h3>
+        <p class="origem" data-translate="vol7_origem">Ecoando Sustentabilidade</p>
+        <p class="resumo" data-translate="vol7_resumo">
+            Surfista, pesquisadora e ativista. Doutoranda bolsista CNPq e tecnica-administrativa
+            na UFSC.
+        </p>
+        <div class="card-social">
+            <a href="https://www.instagram.com/denisesiqueirasurf" title="Instagram Denise" target="_blank" class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/denise-de-siqueira-5b52662a" target="_blank" class="btn-social linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <div class="voluntarios-card">
+        <p class="funcao" data-translate="vol8_funcao">Pessoa mentora</p>
+        <img src="assets/imgs/voluntarios/sara.png" alt="Sara Borém">
+        <h3 data-translate="vol8_nome">Sara Borém</h3>
+        <p class="origem" data-translate="vol8_origem">Projeto Centro Leste Menos Lixo</p>
+        <p class="resumo" data-translate="vol8_resumo">
+            Engenheira sanitarista e Ambiental formada pela UFSC e atua como gestora de
+            sustentabilidade em eventos culturais.
+        </p>
+        <div class="card-social">
+            <a href="https://www.instagram.com/sara.cura" title="Instagram Sara" target="_blank" class="btn-social instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+</div>
     </section>
 
 
@@ -576,7 +607,7 @@
 
                 <p class="descricao" data-translate="modal_baldinhos_desc">
                     A trilha urbana pela Revolução dos Baldinhos revela um dos exemplos mais emblemáticos de
-                    transformação comunitária em Florianópolis. No alto do Monte Serrat, moradores se organizaram para
+                    transformação comunitária em Florianópolis. No alto Chico Mendes, moradores se organizaram para
                     construir uma solução que unia cuidado ambiental, justiça social e autonomia territorial.
                     <br><br>
                     Com baldinhos distribuídos de casa em casa, o bairro passou a coletar o lixo orgânico de forma

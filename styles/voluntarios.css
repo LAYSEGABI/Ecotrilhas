@@ -42,16 +42,22 @@
 /* Card */
 .voluntarios-card {
     background: #fff;
-    width: 260px;          /* largura padrão igual */
-    min-height: 270px;     /* garante mesma altura */
+    width: 300px;          
+    min-height: 340px;   
     border-radius: 16px;
-    padding: 18px;
+    padding: 20px 18px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: .3s;
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.voluntarios-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .voluntarios-card img {
@@ -61,6 +67,7 @@
     border-radius: 100%;
     margin-bottom: 12px;
 }
+
 
 
 .voluntarios-card h3 {
@@ -73,7 +80,7 @@
 .voluntarios-card .origem {                                                  
     font-size: 14px;
     font-weight: 600;
-    color: #4f7b63;
+    color: #0c9b4c;
     margin-bottom: 6px;
 }
 
@@ -88,8 +95,70 @@
     font-size: 14px;
     color: #3b5446;
     line-height: 1.35em;
+    margin-bottom: 15px; /* Espaço entre texto e botões */
+    flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
 }
 
+.card-social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: auto; /* Garante que fique no rodapé do card */
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #eee; /* Linha sutil separando */
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+/* Cores específicas */
+.btn-social.instagram {
+    background-color: #f0fdf4; /* Fundo verde bem clarinho */
+    color: #E1306C; /* Cor oficial do Insta */
+    border: 1px solid #E1306C;
+}
+
+.btn-social.linkedin {
+    background-color: #f0fdf4;
+    color: #0077b5; /* Cor oficial do LinkedIn */
+    border: 1px solid #0077b5;
+}
+
+.btn-social.link-extra {
+    background-color: #f0fdf4;
+    color: #1A3C2D; /* Cor do seu tema */
+    border: 1px solid #1A3C2D;
+}
+
+/* Efeito Hover */
+.btn-social:hover {
+    transform: scale(1.1);
+}
+
+.btn-social.instagram:hover {
+    background-color: #E1306C;
+    color: white;
+}
+
+.btn-social.linkedin:hover {
+    background-color: #0077b5;
+    color: white;
+}
+
+.btn-social.link-extra:hover {
+    background-color: #1A3C2D;
+    color: white;
+}
 
 @media (max-width: 900px) {
     .voluntarios-grid {
