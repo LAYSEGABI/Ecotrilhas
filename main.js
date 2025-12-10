@@ -57,6 +57,7 @@ var greenIcon = L.icon({
   shadowSize: [41, 41],
 });
 
+
 // 4. Lista dos Locais (Trilhas)
 const locais = [
   {

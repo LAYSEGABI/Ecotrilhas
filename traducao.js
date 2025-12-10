@@ -185,6 +185,25 @@ const translations = {
     modal_matadeiro_feed1: `"Um dos momentos que mais me marcou foi uma fala do Seu Aldo: 'Enquanto existir a natureza, não existe homem sábio'. Isso revela que somos pequenos diante da força dos ciclos naturais."`,
     modal_matadeiro_feed2: `"Foi um choque silencioso saber que o mar chegava a ser pintado de vermelho pelo sangue das baleias no Matadeiro. É uma memória dolorosa, mas importante de escutar."`,
     modal_matadeiro_feed3: `"Entendi como a caça às baleias foi estruturante para a economia e cultura da época. Não é só um capítulo isolado, ajuda a entender como se estruturaram comunidades inteiras."`,
+
+    // ... (restante das traduções)
+    mapa_titulo: "Por onde passamos",
+    
+    // Nomes e Descrições do Mapa
+    mapa_loc_baldinhos: "Revolução dos Baldinhos",
+    mapa_desc_baldinhos: "Compostagem comunitária",
+    
+    mapa_loc_mocambique: "Trilha do Moçambique",
+    mapa_desc_mocambique: "Parque Estadual do Rio Vermelho",
+    
+    mapa_loc_peri: "Lagoa do Peri",
+    mapa_desc_peri: "Reserva de água potável e Mata Atlântica",
+    
+    mapa_loc_pocao: "Trilha do Poção",
+    mapa_desc_pocao: "Refúgio urbano na UFSC",
+    
+    mapa_loc_matadeiro: "Matadeiro e Armação",
+    mapa_desc_matadeiro: "História e observação de baleias",
   },
   en: {
     nav_sobre: "About us",
@@ -373,12 +392,37 @@ const translations = {
     modal_matadeiro_feed1: `"One of the moments that marked me the most was a quote from Mr. Aldo: 'As long as nature exists, there is no wise man'. This reveals that we are small in the face of the force of natural cycles."`,
     modal_matadeiro_feed2: `"It was a silent shock to know that the sea used to be painted red by whale blood in Matadeiro. It is a painful memory, but important to listen to."`,
     modal_matadeiro_feed3: `"I understood how whale hunting was structural for the economy and culture of the time. It is not just an isolated chapter, it helps to understand how entire communities were structured."`,
+
+    // ... (restante das traduções)
+    mapa_titulo: "Where we have been",
+    
+    // Map Names and Descriptions
+    mapa_loc_baldinhos: "Revolução dos Baldinhos",
+    mapa_desc_baldinhos: "Community composting",
+    
+    mapa_loc_mocambique: "Moçambique Trail",
+    mapa_desc_mocambique: "Rio Vermelho State Park",
+    
+    mapa_loc_peri: "Lagoa do Peri",
+    mapa_desc_peri: "Drinking water reserve and Atlantic Forest",
+    
+    mapa_loc_pocao: "Poção Trail",
+    mapa_desc_pocao: "Urban refuge at UFSC",
+    
+    mapa_loc_matadeiro: "Matadeiro and Armação",
+    mapa_desc_matadeiro: "History and whale watching",
   },
 };
 
 function changeLanguage(lang) {
-  document.querySelectorAll("[data-translate]").forEach((elem) => {
-    const key = elem.getAttribute("data-translate");
-    elem.innerHTML = translations[lang][key];
-  });
+    // 1. Traduz o HTML (seu código antigo)
+    document.querySelectorAll("[data-translate]").forEach((elem) => {
+        const key = elem.getAttribute("data-translate");
+        if(translations[lang][key]) { // verificação de segurança
+            elem.innerHTML = translations[lang][key];
+        }
+    });
+
+    // 2. Traduz o Mapa (NOVO)
+    atualizarPinosMapa(lang);
 }
