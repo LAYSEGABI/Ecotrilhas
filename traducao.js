@@ -132,19 +132,16 @@ const translations = {
     footer_politica:
       "Direitos reservados | Política de privacidade e termos de uso",
 
+   // ... dentro de pt: { ...
     metricas_titulo: "Resultados e Aprendizados",
     metricas_subtitulo: "Transparência sobre nossa primeira edição piloto.",
     metrica_inscritos: "Jovens<br>Inscritos",
     metrica_frequencia: "Frequência<br>Mínima",
     metrica_certificados: "Líderes<br>Certificados",
     metrica_analise_titulo: "Desafios e Superações",
-    metrica_texto_1:
-      "Durante o processo, o projeto enfrentou desafios naturais de uma edição piloto. Embora tenhamos iniciado com 10 jovens engajados, fatores externos impactaram a jornada.",
-    metrica_texto_2:
-      "<strong>O Fator Climático:</strong> Em diversos momentos, fortes períodos de chuva obrigaram o adiamento de trilhas e mudanças bruscas no cronograma, o que impactou a continuidade de alguns participantes.",
-    metrica_texto_3:
-      "Apesar disso, a conclusão de 3 jovens com excelência (avaliada através de taxa de conclusão, formulários qualitativos e engajamento prático) valida nossa metodologia e nos traz aprendizados valiosos para adaptar o calendário das próximas edições.",
-
+    metrica_texto_1: "Durante o processo, o projeto enfrentou desafios naturais de uma edição piloto. Tivemos 10 jovens inscritos da comunidade, todos inicialmente engajados, porém fatores externos impactaram a jornada.",
+    metrica_texto_2: "<strong>O Fator Climático:</strong> Em diversos momentos, fortes períodos de chuva obrigaram o adiamento de trilhas e mudanças bruscas no cronograma, o que afetou a continuidade de alguns participantes.",
+    metrica_texto_3: "Apesar disso, 3 jovens concluíram o ciclo com excelência, alcançando 75% de participação, avaliada por taxa de presença, formulários qualitativos e engajamento prático. Esse resultado valida nossa metodologia e nos traz aprendizados valiosos para ajustar o calendário nas próximas edições.",
     // --- NOVAS TRADUÇÕES DOS MODAIS (PT) ---
     modal_feedback_intro: "O que os participantes disseram:",
 
@@ -207,7 +204,7 @@ const translations = {
   },
   en: {
     nav_sobre: "About us",
-    nav_participar: "How to participate",
+    nav_participar: "How to join",
     nav_parcerias: "Partnerships",
 
     titulo: "Feet on the trail, </br> mind on the future!",
@@ -339,19 +336,16 @@ const translations = {
     footer_direitos: "©Global Shapers Florianópolis 2025",
     footer_politica: "All rights reserved | Privacy policy and terms of use",
 
+  // ... dentro de en: { ...
     metricas_titulo: "Results and Key Learnings",
     metricas_subtitulo: "Transparency about our first pilot edition.",
     metrica_inscritos: "Registered<br>Youths",
     metrica_frequencia: "Minimum<br>Attendance",
     metrica_certificados: "Certified<br>Leaders",
     metrica_analise_titulo: "Challenges and Overcoming",
-    metrica_texto_1:
-      "During the process, the project faced natural challenges of a pilot edition. Although we started with 10 engaged youths, external factors impacted the journey.",
-    metrica_texto_2:
-      "<strong>The Weather Factor:</strong> At various times, heavy rain periods forced the postponement of trails and sudden schedule changes, which directly impacted the continuity of some participants.",
-    metrica_texto_3:
-      "Nevertheless, the completion of 3 youths with excellence (evaluated through completion rates, qualitative forms, and practical engagement) validates our methodology and brings valuable lessons for adapting the schedule of future editions.",
-
+    metrica_texto_1: "During the process, the project faced natural challenges of a pilot edition. We had 10 youths registered from the community, all initially engaged, but external factors impacted the journey.",
+    metrica_texto_2: "<strong>The Weather Factor:</strong> At various times, heavy periods of rain forced the postponement of trails and sudden schedule changes, which affected the continuity of some participants.",
+    metrica_texto_3: "Nevertheless, 3 youths completed the cycle with excellence, reaching 75% participation, evaluated by attendance rate, qualitative forms, and practical engagement. This result validates our methodology and brings us valuable lessons to adjust the schedule in future editions.",
     // --- NEW MODAL TRANSLATIONS (EN) ---
     modal_feedback_intro: "What participants said:",
 
@@ -411,6 +405,186 @@ const translations = {
     
     mapa_loc_matadeiro: "Matadeiro and Armação",
     mapa_desc_matadeiro: "History and whale watching",
+  },
+  es: {
+    nav_sobre: "Sobre nosotros",
+    nav_participar: "Cómo participar",
+    nav_parcerias: "Alianzas",
+
+    titulo: "¡Pies en el sendero, </br> mente en el futuro!",
+    descricao: "Educación ambiental para quienes quieren marcar la diferencia.",
+    iniciativa: "Una iniciativa de <strong>Global Shapers Florianópolis.</strong>",
+    botao: "Saber más",
+    apoie: "Apoya",
+
+    sobre_titulo: "Sobre nosotros",
+    sobre_iniciativa: `Una iniciativa de Global <br> Shapers Florianópolis`,
+    sobre_p1: `Ecotrilhas es una iniciativa del hub Global Shapers Florianópolis, una red de jóvenes líderes voluntarios conectada al Foro Económico Mundial.`,
+    sobre_p2: `Con base en valores como colaboración, empatía y acción, creemos en el poder de las juventudes para construir un futuro más justo, verde e inclusivo — comenzando aquí, en nuestro territorio.`,
+    sobre_p3: `Actuamos con proyectos de impacto local que buscan reducir desigualdades, fortalecer la sostenibilidad y transformar realidades a partir del protagonismo joven.`,
+
+    eco_titulo: `Propósito e impacto <br> social de Ecotrilhas.`,
+    eco_p1: `Ecotrilhas es un proyecto de impacto socioambiental que ofrece vivencias educativas en senderos ecológicos para jóvenes de 18 a 25 años en Florianópolis.`,
+    eco_p2: `Con senderos, mentorías y talleres, queremos fortalecer el vínculo con el territorio, promover el cuidado del medio ambiente e incentivar el protagonismo juvenil frente a los desafíos del cambio climático.`,
+    eco_p3: `En cada vivencia, se invita a los jóvenes a reflexionar sobre su papel en la sociedad, desarrollar espíritu colaborativo y transformar conocimiento ambiental en acción práctica, convirtiéndose en agentes de cambio en sus propios territorios.`,
+    eco_edital: "Vea nuestra convocatoria",
+
+    obj_titulo: "Objetivos del proyecto",
+    obj1_titulo: "Desarrollar habilidades y protagonismo juvenil",
+    obj1_texto: "Capacitar a los jóvenes para planificar e implementar acciones sostenibles en sus comunidades, estimulando el liderazgo climático.",
+    obj2_titulo: "Fortalecer la conciencia socioambiental",
+    obj2_texto: "Sensibilizar a los participantes sobre la importancia de la preservación ambiental y los impactos del cambio climático creando un sentido de pertenencia y valoración de los territorios locales.",
+    obj3_titulo: "Implementar una solución medible y escalable",
+    obj3_texto: "Desarrollar una solución sostenible que sea medible en sus resultados y replicable en otras comunidades a través de la construcción de una landing page.",
+
+    met_titulo: "METODOLOGÍA",
+    met_subtitulo: "Etapas de la jornada",
+    met1_titulo: "Promover interacción y compromiso.",
+    met1_texto: "Onboarding para acoger a los jóvenes, presentar la red Global Shapers y la jornada del proyecto, aclarar dudas y promover un momento de socialización;",
+    met2_titulo: "Proporcionar aprendizaje teórico.",
+    met2_texto: "Impartimos 6 clases teóricas online con voluntarios especialistas en sostenibilidad, con un enfoque adaptado para adolescentes y jóvenes;",
+    met3_titulo: "Proporcionar aprendizaje práctico.",
+    met3_texto: "Realizamos 5 senderos educativos, recorriendo las cinco regiones de Florianópolis (Norte, Sur, Este, Centro y Continental), conectando el contenido teórico con la realidad local;",
+
+    trilhas_titulo: "Descubre los caminos <br> que exploramos.",
+    trilha_baldinhos_titulo: "Revolução dos Baldinhos",
+    trilha_baldinhos_texto: "Una inmersión en la región continental de Florianópolis, conociendo la iniciativa de la Revolução dos Baldinhos, proyecto de <strong>compostaje comunitario</strong> que transforma residuos orgánicos en abono.",
+    trilha_mocambique_titulo: "Moçambique",
+    trilha_mocambique_texto: "Ubicado en el Parque Estadual do Rio Vermelho, es una de las mayores áreas de costas rocosas y vegetación nativa de la Isla.",
+    trilha_peri_titulo: "Lagoa do Peri",
+    trilha_peri_texto: "La mayor laguna de agua dulce de la isla, foco en preservación y políticas públicas ambientales.",
+    trilha_pocao_titulo: "Poção",
+    trilha_pocao_texto: "Refugio de naturaleza en área urbana, a orillas del barrio Córrego Grande.",
+    trilha_matadeiro_titulo: "Matadeiro",
+    trilha_matadeiro_texto: "Historia y resistencia de la comunidad local, destacando saberes ecológicos y cultura tradicional.",
+
+    voluntarios_titulo: "Voluntarios",
+    voluntarios_subtitulo: "Quienes nos guiaron y compartieron sus saberes durante las caminatas",
+    vol1_funcao: "Guía • Persona mentora",
+    vol1_nome: "Miguel Schuster",
+    vol1_origem: "UFSC • LEMAC",
+    vol1_resumo: "Investigador del litoral sur catarinense, actúa en educación ambiental, ecodiseño y comunidades tradicionales.",
+    vol2_funcao: "Guía • Persona mentora",
+    vol2_nome: "Luiz Serigheli",
+    vol2_origem: "Global Shapers • Florianópolis",
+    vol2_resumo: "Máster en ecología, actúa con educación ambiental, desarrollo comunitario y transformación social.",
+    vol3_funcao: "Guía",
+    vol3_nome: "Gabriel S. da Costa",
+    vol3_origem: "Proyecto Peabiru",
+    vol3_resumo: "Conductor ambiental y profesor de geografía, actúa con investigación histórica, educación y senderos en la región de la Lagoa.",
+    vol4_funcao: "Mentor",
+    vol4_nome: "Dan Baron",
+    vol4_origem: "Instituto Transformance",
+    vol4_resumo: "Arte-educador y coreógrafo, trabaja con danza comunitaria y creatividad social entre Brasil y la Amazonía.",
+    vol5_funcao: "Guía",
+    vol5_nome: "Cíntia Cruz",
+    vol5_origem: "Associação Revolução dos Baldinhos",
+    vol5_resumo: "Líder comunitaria y activista, coordina la Cocina Madre y proyectos de alimentación, cuidado y solidaridad.",
+    vol6_funcao: "Mentor",
+    vol6_nome: "Azania Mahin",
+    vol6_origem: "Territórios Negros em Florianópolis",
+    vol6_resumo: "Graduada y máster en geografía por la UFSC, está desarrollando su investigación sobre territorios negros en Brasil y Estados Unidos.",
+    vol7_funcao: "Mentor",
+    vol7_nome: "Denise Siqueira",
+    vol7_origem: "Ecoando Sustentabilidade",
+    vol7_resumo: "Surfista, investigadora y activista. Doctoranda becaria CNPq y técnica-administrativa en la UFSC.",
+    vol8_funcao: "Mentor",
+    vol8_nome: "Sara Borém",
+    vol8_origem: "Proyecto Centro Leste Menos Lixo",
+    vol8_resumo: "Ingeniera sanitaria y Ambiental formada por la UFSC y actúa como gestora de sostenibilidad en eventos culturales.",
+
+    parc_titulo: "Socios y colaboradores",
+    parc_texto: "Contribuyendo para formar jóvenes agentes de cambio y fortalecer la sostenibilidad en Florianópolis.",
+
+    apoie_titulo: "Otras formas de apoyar",
+    apoie_p1: "¡Puedes seguir impulsando el proyecto EcoTrilhas y ayudando a construir un futuro más sostenible en Florianópolis contribuyendo con nuestra tienda de segunda mano comunitaria – el BreShapers!",
+    apoie_p2: "Comprando en BreShapers, apoyas iniciativas ambientales, fortaleces proyectos comunitarios y estimulas el consumo consciente.",
+    apoie_botao: "Acceder al BreShapers",
+    apoie_qr_texto: "Escanea el código QR para acceder",
+
+    footer_nav: "Navegación",
+    footer_sobre: "Sobre nosotros",
+    footer_ecotrilhas: "Ecotrilhas",
+    footer_objetivos: "Objetivos",
+    footer_metodologia: "Metodología",
+    footer_contato: "Contáctanos",
+    footer_email: "Globalshapersfloripa@gmail.com",
+    footer_site: "Globalshapers.com",
+    footer_faca_parte: "Sé parte",
+    footer_parcerias: "Alianzas",
+    footer_direitos: "©Global Shapers Florianópolis 2025",
+    footer_politica: "Derechos reservados | Política de privacidad y términos de uso",
+
+    // --- MÉTRICAS ---
+    metricas_titulo: "Resultados y Aprendizajes",
+    metricas_subtitulo: "Transparencia sobre nuestra primera edición piloto.",
+    metrica_inscritos: "Jóvenes<br>Inscritos",
+    metrica_frequencia: "Frecuencia<br>Mínima",
+    metrica_certificados: "Líderes<br>Certificados",
+    metrica_analise_titulo: "Desafíos y Superaciones",
+    metrica_texto_1: "Durante el proceso, el proyecto enfrentó desafíos naturales de una edición piloto. Tuvimos 10 jóvenes inscritos de la comunidad, todos inicialmente comprometidos, pero factores externos impactaron la jornada.",
+    metrica_texto_2: "<strong>El Factor Climático:</strong> En diversos momentos, fuertes períodos de lluvia obligaron a posponer senderos y cambios bruscos en el cronograma, lo que afectó la continuidad de algunos participantes.",
+    metrica_texto_3: "A pesar de ello, 3 jóvenes concluyeron el ciclo con excelencia, alcanzando el 75% de participación, evaluada por tasa de asistencia, formularios cualitativos y compromiso práctico. Este resultado valida nuestra metodología y nos aporta aprendizajes valiosos para ajustar el calendario en las próximas ediciones.",
+
+    // --- MODALES (ES) ---
+    modal_feedback_intro: "Lo que dijeron los participantes:",
+
+    // Baldinhos
+    modal_baldinhos_titulo: "Revolução dos Baldinhos",
+    modal_baldinhos_desc: `El sendero urbano por la Revolução dos Baldinhos revela uno de los ejemplos más emblemáticos de transformación comunitaria en Florianópolis. En lo alto del Monte Serrat, los residentes se organizaron para construir una solución que unía cuidado ambiental, justicia social y autonomía territorial.<br><br>Con cubos distribuidos de casa en casa, el barrio pasó a recolectar la basura orgánica de forma descentralizada, transformándola en compost mediante técnicas simples y comunitarias. Esta lógica circular creó un modelo de economía solidaria, en el cual los residuos se convierten en recurso y la comunidad se fortalece.<br><br>La Revolução dos Baldinhos hizo visible que soluciones simples, cuando son guiadas por la comunidad, la educación y el cuidado, tienen fuerza para transformar realidades enteras.`,
+    modal_baldinhos_feed1: `"Me pareció muy potente la idea de que 'la planta impone respeto' y cómo áreas con cultivo logran transformar espacios antes marcados por la basura y la ausencia de cuidado."`,
+    modal_baldinhos_feed2: `"Lo que más me sorprendió fue percibir cómo el compostaje nace como una solución simple para un problema cotidiano, pero se expande hacia acciones profundamente transformadoras dentro de la comunidad."`,
+    modal_baldinhos_feed3: `"El proyecto va mucho más allá de la gestión de residuos: es una puerta de entrada para discutir economía circular, soberanía alimentaria y racismo ambiental. Amplió completamente mi visión."`,
+
+    // Peri
+    modal_peri_titulo: "Lagoa do Peri",
+    modal_peri_desc: `El sendero de la Lagoa do Peri revela la mayor reserva de agua potable de Florianópolis y uno de los últimos remanentes continuos de Mata Atlántica de la isla. Durante la caminata, los jóvenes descubren que el bosque actúa como un filtro natural, protegiendo manantiales, estabilizando el suelo y regulando el flujo hídrico.<br><br>El paisaje actual es fruto de un proceso histórico: el área ya fue utilizada para la agricultura familiar y, con el tiempo, pasó por recuperación ambiental, convirtiéndose en parte del Monumento Natural Municipal da Lagoa do Peri (MONA). El parque es reconocido internacionalmente por el sello Bandera Azul, destacando educación ambiental, turismo sostenible y preservación del agua.`,
+    modal_peri_feed1: `"Después del sendero, me quedó muy claro que el bosque y la biodiversidad local son fundamentales no solo para el equilibrio ambiental, sino también para la propia supervivencia de la región."`,
+    modal_peri_feed2: `"Me intrigó la presencia de diferentes especies de vainilla en la isla y el hecho de que la arena cuenta una historia geológica de casi un millón de años. Este detalle amplía nuestra percepción del tiempo."`,
+    modal_peri_feed3: `"Llamó la atención percibir cómo todo está interconectado: la hojarasca que mantiene el suelo vivo, la restinga, las aves marinas e incluso la importancia de las técnicas tradicionales adaptadas al territorio."`,
+    modal_peri_btn: "Sitio Ayuntamiento (MONA)",
+
+    // Moçambique
+    modal_mocambique_titulo: "Moçambique",
+    modal_mocambique_desc: `El sendero por el Parque Estadual do Rio Vermelho reveló uno de los escenarios más emblemáticos de la relación entre conservación e intervención humana en la Isla de Santa Catarina. El parque, la mayor unidad de conservación de la isla, guarda extensos tramos de restinga y dunas, pero también carga marcas de procesos históricos, como la introducción del pinus para reforestación.<br><br>Durante la caminata, quedó claro cómo esta especie invasora altera el suelo y la biodiversidad local. La vivencia práctica de retirada manual de los pinus permitió comprender que restaurar el ambiente es un acto de cuidado indispensable para el futuro de la isla, exigiendo acción colectiva y continuidad.`,
+    modal_mocambique_feed1: `"Lo que más me llamó la atención fue descubrir que la plantación de pinus en los años 60 fue una elección deliberada, un intento de resolver un problema creando otro."`,
+    modal_mocambique_feed2: `"Participar en la retirada de los pinus me hizo percibir de forma muy concreta cómo una especie invasora es capaz de alterar un ecosistema entero, compitiendo con las nativas."`,
+    modal_mocambique_feed3: `"Arrancar las plántulas y sentir la resistencia de las raíces me hizo entender el tamaño del trabajo. Fue una acción directa, concreta, que genera impacto real y sensación de propósito."`,
+    modal_mocambique_livro_texto: `Para quien quiera profundizar en el tema de las plantas invasoras, vale la pena conocer el libro "ALTERNATIVAS", desarrollado por el grupo LEIMAC-UFSC (@invasoesbiologicas) - una guía ilustrada para el reconocimiento y sustitución de plantas exóticas invasoras por especies nativas en el litoral de Santa Catarina. ¡El material está disponible de forma digital y gratuita!`,
+    modal_mocambique_livro_btn: "Descargar Libro (UFSC)",
+
+    // Poção
+    modal_pocao_titulo: "Poção",
+    modal_pocao_desc: `El sendero del Poção es uno de los ambientes naturales más simbólicos de la región de la UFSC. El camino atraviesa un valle donde el agua moldeó rocas y alimentó manantiales. Sin embargo, los ambientes populares sufren fuerte presión antrópica, como pisoteo y descarte de residuos.<br><br>Un aspecto esencial es el papel activo de estudiantes y voluntarios que desarrollan acciones de limpieza y manejo de especies invasoras. Preservar el Poção es garantizar que este espacio continúe siendo un refugio ecológico y educativo.`,
+    modal_pocao_feed1: `"Extremadamente importante tener un equilibrio en la fauna y flora para que la naturaleza no tenga problemas de extinción masiva y desequilibrios mayores."`,
+    modal_pocao_feed2: `"Una curiosidad que aprendí y no sabía: tanto la abeja de la miel como los titíes son especies invasoras en la región."`,
+    modal_pocao_feed3: `"Percibo el impacto ecológico que las especies invasoras poseen y el impacto del ser humano en ello también."`,
+
+    // Matadeiro
+    modal_matadeiro_titulo: "Matadeiro y Armação",
+    modal_matadeiro_desc: `Este sendero representó una inmersión profunda en la historia ballenera de Florianópolis. La antigua “armação baleeira” funcionó como un polo industrial en el Brasil colonial. El sendero abordó el declive de esta actividad y la transformación de la región en un punto de observación y preservación de la ballena franca.<br><br>Un momento impactante fue la visita al Sr. Aldo, pescador tradicional que compartió historias transmitidas por generaciones. El nombre "Matadeiro" remonta justamente a ese pasado de matanza de ballenas, una memoria dolorosa pero necesaria para la comprensión del territorio.<br><br>Hoy, la región simboliza la transición de la explotación intensiva hacia la valoración del patrimonio natural y cultural.`,
+    modal_matadeiro_feed1: `"Uno de los momentos que más me marcó fue una frase del Sr. Aldo: 'Mientras exista la naturaleza, no existe hombre sabio'. Esto revela que somos pequeños ante la fuerza de los ciclos naturales."`,
+    modal_matadeiro_feed2: `"Fue un choque silencioso saber que el mar llegaba a teñirse de rojo por la sangre de las ballenas en el Matadeiro. Es una memoria dolorosa, pero importante de escuchar."`,
+    modal_matadeiro_feed3: `"Entendí cómo la caza de ballenas fue estructural para la economía y cultura de la época. No es solo un capítulo aislado, ayuda a entender cómo se estructuraron comunidades enteras."`,
+
+    // --- MAPA ---
+    mapa_titulo: "Por dónde pasamos",
+
+    // Nombres y Descripciones del Mapa
+    mapa_loc_baldinhos: "Revolução dos Baldinhos",
+    mapa_desc_baldinhos: "Compostaje comunitario",
+
+    mapa_loc_mocambique: "Sendero de Moçambique",
+    mapa_desc_mocambique: "Parque Estadual do Rio Vermelho",
+
+    mapa_loc_peri: "Lagoa do Peri",
+    mapa_desc_peri: "Reserva de agua potable y Mata Atlántica",
+
+    mapa_loc_pocao: "Sendero del Poção",
+    mapa_desc_pocao: "Refugio urbano en la UFSC",
+
+    mapa_loc_matadeiro: "Matadeiro y Armação",
+    mapa_desc_matadeiro: "Historia y observación de ballenas",
   },
 };
 
