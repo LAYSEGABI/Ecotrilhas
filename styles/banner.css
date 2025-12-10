@@ -16,7 +16,7 @@ section.banner {
 
     padding: 0 4rem;
 
-    & > img {
+    &>img {
         width: 230px;
     }
 
@@ -28,7 +28,7 @@ section.banner {
     & p {
         color: rgb(240, 248, 224);
 
-        & > strong {
+        &>strong {
             color: var(--cor-destaque);
         }
     }
@@ -49,8 +49,8 @@ section.banner {
             transition: .5s;
 
             &:hover {
-            background-color: rgba(7, 75, 7, 0.76);
-            border: solid 2px rgba(7, 75, 7, 0.76);
+                background-color: rgba(7, 75, 7, 0.76);
+                border: solid 2px rgba(7, 75, 7, 0.76);
 
 
             }
@@ -63,6 +63,12 @@ section.banner {
 
 @media (max-width: 800px) {
     section.banner {
+        background: linear-gradient(to top, rgba(12, 12, 12, 0.89) 20%, rgba(0, 0, 0, 0)), url("../assets/imgs/back-banner-of.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        background-size: cover;
+
         padding: 1rem;
         justify-content: center;
         align-items: center;
@@ -73,9 +79,10 @@ section.banner {
 @media (max-width: 330px) {
     section.banner {
 
-        & > img {
+        &>img {
             width: 150px;
         }
+
         & h1 {
             font-size: 2rem;
         }

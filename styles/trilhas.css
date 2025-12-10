@@ -330,4 +330,8 @@ section.trilhas {
             }
         }
     }
+
+    .modal-body {
+    padding: 20px;
+}
 }
