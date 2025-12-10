@@ -49,6 +49,9 @@
     background-color: #2e7d32;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     color: var(--text-color);
