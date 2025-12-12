@@ -77,7 +77,7 @@ section.parceiros a:hover {
 @media (max-width: 650px) {
     section.parceiros .container {
         gap: 1.5rem;
-        padding: 1.5rem 0;
+        padding: 1.5rem;
     }
 
     section.parceiros .container img {
