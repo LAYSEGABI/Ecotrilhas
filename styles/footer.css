@@ -20,7 +20,7 @@ footer {
         flex-wrap: wrap;
 
         & img[src*="logo"] {
-            width: 150px;
+            width: 200px;
         }
 
         & .links {
